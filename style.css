@@ -1,0 +1,253 @@
+body{
+ background-color: white;
+}  
+
+.top{
+    border: 20px solid;
+    border-image-source: url("triangles.png");
+    border-image-slice: 60 50;
+    /*border-image-source: repeating-linear-gradient(45deg, transparent, #4d9f0c 20px);*/
+    /*border: rgb(131, 236, 243) solid 20px;*/
+    
+}
+
+#bracketsRight{
+    position: absolute;
+    top: 45px;
+    right: 210px;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+#bracketsLeft{
+    position: absolute;
+    top: 45px;
+    left: 210px;
+    max-width: 90px;
+    max-height: 90px;
+
+}
+#myAvatar{
+    position: relative;
+    top: 50%;
+    left: 45%;
+    right: 80%;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+   
+}
+
+#topHeader{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40,end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing { /* Typewriter effect*/
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+body::before {  /*shadow effect*/
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+    z-index: 10
+    
+}
+
+#AboutMeTag{
+   
+    font-family: fantasy;
+    border: solid transparent;
+    top: 45%;
+    left: 30%;
+    border-top-width: 50px;
+    border-bottom-width: 50px;
+    border-left-width: 50px;
+    border-right-width: 50px;
+} 
+
+#background_image{
+
+    background-image: url('worldgif.gif');
+    background-repeat: repeat;
+}
+
+#title{
+    font-family: fantasy;
+    color: aqua;
+   font-size: 50px;
+}
+
+#play_button{
+    border-radius: 50%;
+    background-color: darkgrey;
+    font-size: 30px;
+    padding: 15px; 
+    float: left; 
+    margin: 250px 50px 60px 75px;
+    
+}
+
+#play_button:hover{
+    color: aqua;
+}
+
+#about_button{
+    border-radius: 50%;
+    background-color: darkgrey;
+    font-size: 30px;
+    padding: 15px;
+    float: left;
+    margin: 250px 50px 60px 75px;
+}
+
+#about_button:hover{
+    color: aqua;
+}
+
+
+#surprise_button{
+    border-radius: 50%;
+    background-color: darkgrey;
+    font-size: 30px;
+    padding: 15px;
+    float: left;
+    margin: 250px 50px 60px 75px;
+}
+
+#surprise_button:hover{
+    color: aqua;
+}
+
+#funfacts_button{
+    border-radius: 50%;
+    background-color: darkgrey;
+    font-size: 30px;
+    padding: 15px;
+    float: left;
+    margin: 250px 50px 60px 75px;
+}
+
+#funfacts_button:hover{
+    color: aqua; 
+}
+
+.about_modal{
+    border: black solid 5px;
+    display: none;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    position: fixed;
+    left: 20%;
+    top: 30%;
+    width: 50%;
+    height: 20%;
+    overflow: auto; 
+    padding: 10px 15px 10px 10px;
+    opacity: 0.9;
+      -moz-opacity: 0.9; 
+      -webkit-opacity: 0.9;
+      filter: alpha(opacity=90);
+    
+}
+
+.close{
+    position: absolute;
+    right: -1px;
+    top: -5px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 1px;
+    z-index: 3;
+    
+    
+}
+.close:hover{
+    color: aqua;
+    opacity: 0.35;
+    -moz-opacity:0.35;
+    -webkit-opacity:0.35;
+    filter: alpha(opacity=35);
+
+}
+.modal_content{
+    position: relative;
+    z-index: 2;
+}
+
+#modal-text{
+    text-align: center;
+}
+
+.trivia-modal{
+    position: absolute;
+    display: none;
+    background-color: whitesmoke; 
+    padding:  20px 200px 20px 400px; 
+    width: 50%;
+    height: 50%;
+    left: 1%;
+    top: 30%; 
+    border: solid red 5px; 
+    
+}
+
+.quit-btn{
+    border-radius: 50%;
+    font-size: 30px;
+    float: right;
+    top: 20%;
+    right: 10%;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+    background-color:darkgray;  
+    line-height: 30px;
+}
+
+.quit-btn:hover{
+    color: aqua;
+}
+
+#button0, #button1, #button2, #button3{
+    background-color: midnightblue;
+    font-size: 20px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    color: white;
+}  
+
+#button0:hover , #button1:hover, #button2:hover, #button3:hover{
+
+    color: mintcream;
+    font-size: 20px;
+    opacity: 0.35;
+    -moz-opacity:0.35;
+    -webkit-opacity:0.35;
+    filter: alpha(opacity=35);
+}
+
+#imgs{
+    margin-left: -300px;
+    height: 20px;
+}
+

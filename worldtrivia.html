@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        World Trivia 🌍
+    </title>
+</head>
+
+<body id=background_image>
+    <div id=title>
+        WELCOME TO WORLD TRIVIA...
+
+        <audio autoplay controls loop>
+            <source src="elevator_music.mp3">
+        </audio>
+    </div>
+
+    <div id=about>
+        <button id="about_button">
+            ABOUT
+        </button>
+        <!--ABOUT Modal-->
+        <div id="about_modal" class="about_modal">
+            <!--Close Button-->
+            <div class="close"><span id="close">&otimes;</span></div>
+            <!--ModalContent-->
+            <div id="modal_content" class="modal_content">
+                <p id="modal-text">World Trivia, as the name hints, is
+                    a quiz-like game created for the purposes of entertaining and educating its audience on different
+                    parts of world. <br>
+                    The game is timed, multiple choice, and includes various topics such as world geography, culture,
+                    food, and language.
+                    <br> Enjoy!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="play">
+        <button id="play_button">
+            PLAY
+        </button>
+        <!--Trivia Pop Up-->
+        <div id="trivia-modal" class="trivia-modal">
+            <div id="quit-btn"><button class="quit-btn">QUIT</button></div>
+
+            <div id="question" class="question">
+                <p id="question"></p>
+            </div>
+
+            <!-- <div id="imgs" class="imgs">
+                        <img src="borscht.png" alt="" id="current">
+                        <img src="pelmeni.jpg" alt="">
+                    </div>-->
+
+
+
+            <div id="buttons" class="buttons">
+
+                <button id="button0"><span id="choice0"></span></button>
+                <button id="button1"><span id="choice1"></span></button>
+                <button id="button2"><span id="choice2"></span></button>
+                <button id="button3"><span id="choice3"></span></button>
+
+            </div>
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+    <div id=surprise>
+        <button id="surprise_button">
+            SURPRISE ME!
+        </button>
+    </div>
+
+
+    <div id="funfacts">
+        <button id="funfacts_button">
+            FUN FACTS
+        </button>
+    </div>
+
+</body>
+<script src="worldtrivia.js"></script>
+<script src="triviaquestions.js"></script>
+<script src="QuizController.js"></script>
+<script src="triviaapp.js"></script>
+
+</html>
